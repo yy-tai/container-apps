@@ -1,0 +1,19 @@
+wikijs:
+  image: requarks/wiki:latest
+  environment:
+      DB_TYPE: postgres
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_USER: wikijs
+      DB_PASS: wikijs
+      DB_NAME: wikijs_db
+  links:
+    - db:postgres_zhparser
+  ports:
+    - "3000:80"
+db:
+  image: chenxinaz/zhparser:latest
+  environment:
+      POSTGRES_DB: wiki
+      POSTGRES_PASSWORD: wikijs
+      POSTGRES_USER: wikijs
