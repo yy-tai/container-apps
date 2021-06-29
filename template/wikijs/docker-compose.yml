@@ -8,7 +8,7 @@ wikijs:
       DB_PASS: wikijs
       DB_NAME: wikijs_db
   links:
-    - db:postgres_zhparser
+    - db:db
   ports:
     - "3000:80"
 db:
