@@ -69,7 +69,7 @@
         "description": "Wiki.js is a rich content management system for creating wiki pages.",
         "repository": "dockerhub",
         "arch": "amd64",
-        "icon": "https://raw.githubusercontent.com/qnap-dev/container-apps/2.0/images/app_wordpress.png",
+        "icon": "https://static.requarks.io/logo/wikijs-full.svg",
         "displayName": "Wiki.js",
         "name": "wikijs",
         "version": "latest",
