@@ -4,6 +4,8 @@ postgresql:
       POSTGRES_DB: wikijs_db
       POSTGRES_PASSWORD: wikijs
       POSTGRES_USER: wikijs
+  ports:
+    - "5432:5432"      
 wikijs:
   image: requarks/wiki:latest
   environment:
@@ -14,6 +16,6 @@ wikijs:
       DB_PASS: wikijs
       DB_NAME: wikijs_db
   links:
-    - postgresql:postgresql
+    - db:postgresql
   ports:
     - "3000:80"
