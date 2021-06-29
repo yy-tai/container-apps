@@ -605,5 +605,16 @@
         "version": "1.1.1",
         "location": "https://hub.docker.com/r/arm64v8/irssi",
         "type": "docker"
+    },
+    {
+        "description": "Wiki.js is a rich content management system for creating wiki pages.",
+        "repository": "dockerhub",
+        "arch": "amd64",
+        "icon": "https://raw.githubusercontent.com/qnap-dev/container-apps/2.0/images/app_wordpress.png",
+        "displayName": "Wiki.js",
+        "name": "wikijs",
+        "version": "latest",
+        "location": "https://hub.docker.com/r/requarks/wiki",
+        "type": "app"
     }
 ]
