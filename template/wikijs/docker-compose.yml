@@ -14,7 +14,7 @@ wikijs:
       DB_USER: wikijs
       DB_PASS: wikijs
       DB_NAME: wikijs_db
-  links:
-      - db:postgresql
+depends_on:
+      - db
   ports:
     - "3000:80"
