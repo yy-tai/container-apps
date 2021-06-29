@@ -10,7 +10,7 @@ wikijs:
   environment:
       DB_TYPE: postgres
       DB_HOST: db
-      DB_PORT: 5432
+      DB_PORT: 49182
       DB_USER: wikijs
       DB_PASS: wikijs
       DB_NAME: wikijs_db
