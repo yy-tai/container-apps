@@ -1,11 +1,10 @@
-postgresql:
+db:
   image: chenxinaz/zhparser:latest
   environment:
       POSTGRES_DB: wikijs_db
       POSTGRES_PASSWORD: wikijs
       POSTGRES_USER: wikijs
-  ports:
-    - "5432:5432"      
+      
 wikijs:
   image: requarks/wiki:latest
   environment:
@@ -15,7 +14,8 @@ wikijs:
       DB_USER: wikijs
       DB_PASS: wikijs
       DB_NAME: wikijs_db
-  links:
-    - db:postgresql
+  depends_on:
+      db:
+        condition: service_healthy
   ports:
     - "3000:80"
