@@ -6,15 +6,15 @@ wikijs:
       DB_PORT: 49182
       DB_USER: wikijs
       DB_PASS: wikijs
-      DB_NAME: wikijs_db
+      DB_NAME: wiki
 links:
       - db:db
   ports:
-    - "3000:80"
+    - 3000:80
 db:
   image: chenxinaz/zhparser:latest
   environment:
-      POSTGRES_DB: wikijs_db
+      POSTGRES_DB: wiki
       POSTGRES_PASSWORD: wikijs
       POSTGRES_USER: wikijs
       
