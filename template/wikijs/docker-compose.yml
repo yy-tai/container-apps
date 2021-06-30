@@ -7,7 +7,7 @@ wikijs:
       DB_USER: wikijs
       DB_PASS: wikijs
       DB_NAME: wiki
-links:
+  links:
       - db:db
   ports:
     - 3000:80
@@ -16,5 +16,4 @@ db:
   environment:
       POSTGRES_DB: wiki
       POSTGRES_PASSWORD: wikijs
-      POSTGRES_USER: wikijs
-      
+      POSTGRES_USER: wikijs      
