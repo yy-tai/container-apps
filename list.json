@@ -77,6 +77,17 @@
         "type": "app"
     },
     {
+        "description": "phpBB is a Forum management system.",
+        "repository": "dockerhub",
+        "arch": "amd64",
+        "icon": "https://dyltqmyl993wv.cloudfront.net/assets/stacks/phpbb/img/phpbb-stack-110x117.png",
+        "displayName": "phpBB",
+        "name": "phpBB",
+        "version": "latest",
+        "location": "https://hub.docker.com/r/bitnami/phpbb",
+        "type": "app"
+    },
+    {
         "description": "Fast, free and incredibly easy to use, the Ubuntu operating system powers millions of desktop PCs, laptops and servers around the world.",
         "repository": "qnap",
         "inspect": "{}",
