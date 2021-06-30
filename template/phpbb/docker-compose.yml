@@ -1,10 +1,10 @@
 phpbb:
   image: bitnami/phpbb:latest
   environment:
-    ALLOW_EMPTY_PASSWORD=yes
-    PHPBB_DATABASE_USER=bn_phpbb
-    PHPBB_DATABASE_PASSWORD=bitnami
-    PHPBB_DATABASE_NAME=bitnami_phpbb
+    ALLOW_EMPTY_PASSWORD: yes
+    PHPBB_DATABASE_USER: bn_phpbb
+    PHPBB_DATABASE_PASSWORD: bitnami
+    PHPBB_DATABASE_NAME: bitnami_phpbb
   links:
     - db:mysql
   ports:
@@ -13,7 +13,7 @@ phpbb:
 db:
   image: bitnami/mariadb:latest
   environment:
-    ALLOW_EMPTY_PASSWORD=yes    
-    MARIADB_USER=bn_phpbb
-    MARIADB_PASSWORD=bitnami
-    MARIADB_DATABASE=bitnami_phpbb
+    ALLOW_EMPTY_PASSWORD: yes    
+    MARIADB_USER: bn_phpbb
+    MARIADB_PASSWORD: bitnami
+    MARIADB_DATABASE: bitnami_phpbb
